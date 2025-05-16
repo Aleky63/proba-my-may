@@ -38,6 +38,11 @@ body {
   font-weight: 600;
   color: #2b2a29;
 }
+:root {
+  --color-white: #fff;
+  --color-main: #0a507a;
+  --color-black: #2b2a29;
+}
 .container {
   max-width: 1740px;
   padding: 0 10px;
@@ -53,7 +58,7 @@ body {
   display: flex;
   font-style: 20px;
   font-weight: 700;
-  color: #0a507a;
+  color: var(--color-main);
   gap: 40px;
 }
 .header__phone {
@@ -62,8 +67,8 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background-color: #0a507a;
-  color: #fff;
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 .title-img {
   margin-bottom: 12px;
@@ -72,10 +77,10 @@ body {
 .title-text {
   display: inline-block;
   padding: 10px 20px;
-  color: #fff;
+  color: var(--color-white);
   font-size: 20px;
   border-radius: 30px;
-  background-color: #2b2a29;
+  background-color: var(--color-black);
 }
 
 .header__content {
@@ -91,9 +96,9 @@ body {
 }
 .header__info-item {
   padding: 10px 20px;
-  color: #0a507a;
+  color: var(--color-main);
   border-radius: 30px;
-  border: 1px solid #0a507a;
+  border: 1px solid var(--color-main);
   font-size: 26px;
   font-weight: 700;
 }
@@ -136,12 +141,12 @@ body {
   text-transform: uppercase;
 }
 .header__buttons-book {
-  color: #fff;
-  background-color: #2b2a29;
-  border: 1px solid var(--black);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
 }
 .header__buttons-activities {
-  color: #2b2a29;
+  color: var(--color-black);
   background-color: rgba(255, 155, 255, 0.3);
-  border: 1px solid #2b2a29;
+  border: 1px solid var(--color-black);
 }
