@@ -48,6 +48,12 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+.header {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+}
 .header__top {
   padding: 50px 0 90px;
   display: flex;
@@ -73,7 +79,10 @@ body {
 .title-img {
   margin-bottom: 12px;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
+
 .title-text {
   display: inline-block;
   padding: 10px 20px;
@@ -113,7 +122,7 @@ body {
   flex-direction: column;
   padding: 50px 20px;
   border-radius: 10px;
-  background-color: rgba(255, 155, 255, 0.8);
+  background-color: rgba(236, 224, 236, 0.8);
 }
 .header__news-title,
 .header__news-time {
@@ -147,6 +156,6 @@ body {
 }
 .header__buttons-activities {
   color: var(--color-black);
-  background-color: rgba(255, 155, 255, 0.3);
+  background-color: rgba(236, 224, 236, 0.3);
   border: 1px solid var(--color-black);
 }
