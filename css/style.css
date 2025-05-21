@@ -20,6 +20,7 @@ li {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -171,6 +172,37 @@ body {
   background-color: rgba(236, 224, 236, 0.3);
   border: 1px solid var(--color-black);
 }
+.text {
+  min-width: 1075px;
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 150px 0;
+}
+.about {
+  margin-bottom: 150px;
+}
+
+.about__inner {
+  display: flex;
+}
+.about__content {
+}
+.about__subtitle {
+}
+.about__title {
+}
+.about__list {
+}
+.about__item {
+}
+.about__text {
+}
+.about__img {
+}
+.about__link {
+}
+
 @media (max-width: 1920px) {
   .header {
     padding-bottom: 50px;
