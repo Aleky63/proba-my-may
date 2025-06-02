@@ -259,17 +259,118 @@ body {
 .activities__info {
   display: flex;
   gap: 20px;
+  margin-bottom: 100px;
 }
 .activities__title {
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  flex-basis: 50%;
 }
 
 .activities__text {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  flex-basis: 50%;
 }
-.buttons-book {
+.activities__text .buttons-book {
+  align-self: start;
 }
 .activities__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.Activities__item {
+.activities__item {
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  padding: 100px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activities__item h5 {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  max-width: 115px;
+}
+
+.site-images {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.reviews {
+  margin-bottom: 150px;
+}
+.reviews__top {
+  margin-bottom: 100px;
+  margin-left: 50%;
+}
+.reviews__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.reviews--title {
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.reviews__items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.reviews__item:nth-child(even) {
+  padding-top: 100px;
+}
+.reviews__item {
+}
+.reviews__img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.blockquote-big {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blockquote___text {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.blockquote___text-big {
+  display: block;
+  width: 58%;
+}
+.blockquote__blockcite {
+  align-self: end;
+  margin-bottom: 15px;
+}
+.blockquote___cite {
+  display: block;
+  text-align: left;
+}
+
+.blockquote___cite::before {
+  content: "/";
+  margin-bottom: 5px;
+}
+.blockquote___time {
+  display: block;
+  text-align: left;
 }
 
 @media (max-width: 1920px) {
