@@ -200,7 +200,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.about__subtitle {
+.subtitle {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 20px;
@@ -253,11 +253,7 @@ body {
 .activities {
   margin-bottom: 100px;
 }
-.activities__subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+
 .activities__info {
   display: flex;
   gap: 20px;
@@ -290,8 +286,7 @@ body {
 .activities__item {
   border: 1px solid var(--color-black);
   border-radius: 50%;
-  padding: 100px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,11 +309,7 @@ body {
   margin-bottom: 100px;
   margin-left: 50%;
 }
-.reviews__subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+
 .reviews--title {
   font-weight: 800;
   font-size: 64px;
@@ -469,7 +460,11 @@ body {
     padding: 75px 0;
     font-size: 40px;
   }
-  .about__title {
+  .about__content {
+    flex-basis: 50%;
+  }
+  .about__title,
+  .activities__title {
     font-size: 48px;
     margin-bottom: 20px;
   }
@@ -489,7 +484,6 @@ body {
 @media (max-width: 992px) {
   .text {
     padding: 50px 0;
-
     font-size: 32px;
   }
   .menu__btn {
@@ -525,6 +519,33 @@ body {
   .header__info-list {
     max-width: 100%;
   }
+  .about,
+  .site-images,
+  .activities {
+    margin-bottom: 75px;
+  }
+  .about__inner {
+    flex-wrap: wrap;
+  }
+  .about__content {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .about__img {
+    flex-basis: 100%;
+  }
+  .activities__info {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .activities__title,
+  .activities__text {
+    flex-basis: 100%;
+  }
+  .activities__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 480px) {
   .header__buttons {
@@ -545,5 +566,23 @@ body {
   }
   .header__info-list {
     gap: 10px;
+  }
+  .about__item {
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  .subtitle {
+    margin-bottom: 10px;
+  }
+  .activities__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__title,
+  .activities__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .site-images {
+    display: none;
   }
 }
